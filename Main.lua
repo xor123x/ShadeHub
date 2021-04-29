@@ -109,7 +109,7 @@ DuckLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DuckLogo.BackgroundTransparency = 1.000
 DuckLogo.Position = UDim2.new(0.359375, 0, 0.0249999985, 0)
 DuckLogo.Size = UDim2.new(0, 90, 0, 90)
-DuckLogo.Image = "rbxassetid://5552873993"
+DuckLogo.Image = "rbxassetid://6730308891"
 
 DuckText.Name = "DuckText"
 DuckText.Parent = DuckLogo
@@ -118,7 +118,7 @@ DuckText.BackgroundTransparency = 1.000
 DuckText.Position = UDim2.new(0.0274305344, 0, 0.99444443, 0)
 DuckText.Size = UDim2.new(0, 48, 0, 30)
 DuckText.Font = Enum.Font.Gotham
-DuckText.Text = "Duck"
+DuckText.Text = "Shade"
 DuckText.TextColor3 = Color3.fromRGB(255, 255, 255)
 DuckText.TextSize = 20.000
 
@@ -130,7 +130,7 @@ HubText.Position = UDim2.new(0.560763836, 0, 0.99444443, 0)
 HubText.Size = UDim2.new(0, 36, 0, 30)
 HubText.Font = Enum.Font.Gotham
 HubText.Text = "Hub"
-HubText.TextColor3 = Color3.fromRGB(37, 212, 94)
+HubText.TextColor3 = Color3.fromRGB(124, 0, 255)
 HubText.TextSize = 20.000
 
 GameName.Name = "GameName"
