@@ -114,6 +114,10 @@
      "6010979912": {
         "ScriptName": "DeathZone.lua",
         "GameName": "DeathZone"
+    },
+    "6691840464": {
+        "ScriptName": "test.lua",
+        "GameName": "test"
     }
     
 
