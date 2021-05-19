@@ -1,5 +1,5 @@
 --library
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xor123x/ShadeHub/master/UILIBS/kevouilib"))()
 local Main = Library.CreateLib("ShadeHub - Arsenal", "Ocean")
 
 --tabs
