@@ -12,9 +12,9 @@ local vSection = Visuals:NewSection("Visuals")
 
 cbSection:NewToggle("SilentAim", "Enables SilentAim.", function(state)
     if state then
-        print("Toggle On")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xor123x/arsenal-script-testing-kavoui/master/silentaim"))()
     else
-        print("Toggle Off")
+        getgenv().saim = false;
     end
 end)
 
