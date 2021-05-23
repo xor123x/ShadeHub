@@ -1,62 +1,48 @@
-  
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xarkkz/newui/main/libary"))()
-local ShadeHub = library.new("ShadeHub", 5013109572)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("ShadeHub - Arsenal", "Ocean")
+ 
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+local Combat = Window:NewTab("Combat")
+local Visuals = Window:NewTab("Visuals")
+local Misc = Window:NewTab("Misc")
+local Credits = Window:NewTab("Credits")
+local cbSection = Combat:NewSection("Combat")
+local vSection = Visuals:NewSection("Visuals")
+local mSection = Misc:NewSection("Misc")
+local mpSection = Misc:NewSection("Player")
+local cSection = Credits:NewSection("Credits")
 
--- themes
-local themes = {
-Background = Color3.fromRGB(24, 24, 24),
-Glow = Color3.fromRGB(0, 0, 0),
-Accent = Color3.fromRGB(10, 10, 10),
-LightContrast = Color3.fromRGB(20, 20, 20),
-DarkContrast = Color3.fromRGB(14, 14, 14),  
-TextColor = Color3.fromRGB(255, 255, 255)
-}
 
--- first page
-local page = ShadeHub:addPage("Arsenal", 5012544693)
-local section1 = page:addSection("Section 1")
-local section2 = page:addSection("Section 2")
-
-section1:addToggle("SilentAim", nil, function(value)
-loadstring(game:HttpGet("https://pastebin.com/raw/DUeHdyvk", value))()
-end)
-section1:addButton("ESP", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xor123x/arsenal-script-testing-kavoui/master/boxesp", true))()
-end)
-section1:addTextbox("Notification", "Default", function(value, focusLost)
-print("Input", value)
-
-if focusLost then
-ShadeHub:Notify("Title", value)
-end
+cbSection:NewToggle("SilentAim", "Enables SilentAim.", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xor123x/arsenal-script-testing-kavoui/master/silentaim"))()
+    else
+        getgenv().saim = false;
+    end
 end)
 
-section2:addKeybind("Toggle Keybind", Enum.KeyCode.One, function()
-print("Activated Keybind")
-ShadeHub:toggle()
-end, function()
-print("Changed Keybind")
+vSection:NewButton("Box esp", "Esp.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xor123x/arsenal-script-testing-kavoui/master/boxesp"))()
 end)
-section2:addColorPicker("ColorPicker", Color3.fromRGB(50, 50, 50))
-section2:addColorPicker("ColorPicker2")
-section2:addSlider("Slider", 0, -100, 100, function(value)
-print("Dragged", value)
-end)
-section2:addDropdown("Dropdown", {"Hello", "World", "Hello World", "Word", 1, 2, 3})
-section2:addDropdown("Dropdown", {"Hello", "World", "Hello World", "Word", 1, 2, 3}, function(text)
-print("Selected", text)
-end)
-section2:addButton("Button")
 
--- second page
-local theme = ShadeHub:addPage("Theme", 5012544693)
-local colors = theme:addSection("Colors")
-
-for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
-colors:addColorPicker(theme, color, function(color3)
-ShadeHub:setTheme(theme, color3)
+mSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
 end)
-end
 
--- load
-ShadeHub:SelectPage(ShadeHub.pages[1], true)
+cSection:NewButton("Uilib - xHeptc", "Maker of gui lib", function()
+    print("TY xHeptc")
+end)
+
+cSection:NewButton("Scripting - Shade/tim", "Owner of script", function()
+    print("ShadeHubOnTop")
+end)
+
+mpSection:NewSlider("WalkSpeed", "Changes walk speed.", 50, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+mpSection:NewSlider("JumpPower", "Changes Jumper Power.", 100, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.jumppower = s
+end)
