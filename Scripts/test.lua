@@ -1,13 +1,13 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("ShadeHub - Prison Life", "Ocean")
+    local Window = Library.CreateLib("ShadeHub - Arsenal", "Ocean")
  
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
-local Combat = Main:NewTab("Combat")
-local Visuals = Main:NewTab("Visuals")
-local Misc = Main:NewTab("Misc")
-local Credits = Main:NewTab("Credits")
+local Combat = Window:NewTab("Combat")
+local Visuals = Window:NewTab("Visuals")
+local Misc = Window:NewTab("Misc")
+local Credits = Window:NewTab("Credits")
 local cbSection = Combat:NewSection("Combat")
 local vSection = Visuals:NewSection("Visuals")
 local mSection = Misc:NewSection("Misc")
