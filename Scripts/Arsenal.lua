@@ -1,9 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("ShadeHub - Arsenal", "Ocean")
  
-    -- MAIN
-    local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("Main")
+
 local Combat = Window:NewTab("Combat")
 local Visuals = Window:NewTab("Visuals")
 local Misc = Window:NewTab("Misc")
