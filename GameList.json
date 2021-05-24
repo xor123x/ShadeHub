@@ -118,6 +118,14 @@
     "6691840464": {
         "ScriptName": "test.lua",
         "GameName": "test"
+    },
+    "155615604": {
+        "ScriptName": "PrisonLife.lua",
+        "GameName": "PrisonLife"
+    },
+    "5023820864": {
+        "ScriptName": "TradeTower.lua",
+        "GameName": "TradeTower"
     }
     
 
