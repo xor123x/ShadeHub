@@ -134,6 +134,10 @@
      "1962086868": {
         "ScriptName": "TOH.lua",
         "GameName": "TOH"
+    },
+     "606849621": {
+        "ScriptName": "JailBreak.lua",
+        "GameName": "JailBreak"
     }
     
 
