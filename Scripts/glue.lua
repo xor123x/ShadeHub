@@ -126,6 +126,10 @@ Section:NewButton("Buy Random Fruity (500k)", "Buys a random fruit.", function()
     game:GetService("ReplicatedStorage").RemoteEvent.Reset.Reset:FireServer("Random DF", "Money")
 end)
 
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
 
 
 local Tab2 = Window:NewTab("Teleports")
