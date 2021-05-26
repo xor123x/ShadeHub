@@ -126,6 +126,10 @@
     "5023820864": {
         "ScriptName": "TradeTower.lua",
         "GameName": "TradeTower"
+    },
+     "394506555": {
+        "ScriptName": "glue.lua",
+        "GameName": "GluePiece"
     }
     
 
