@@ -90,6 +90,7 @@ end)
 local target = nil
 Section:NewDropdown("Select Target", "DropdownInf", {
     "Cutie Noob",
+    "Nooby :D",
     "King Noob",
     "Kyo",
     "Sans",
