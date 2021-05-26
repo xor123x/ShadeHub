@@ -130,6 +130,10 @@
      "394506555": {
         "ScriptName": "glue.lua",
         "GameName": "GluePiece"
+    },
+     "1962086868": {
+        "ScriptName": "TOH.lua",
+        "GameName": "TOH"
     }
     
 
