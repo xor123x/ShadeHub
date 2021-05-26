@@ -1,0 +1,18 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("ShadeHub - Bloxburg", "Ocean")
+
+    local Autofarm = Window:NewTab("Autofarm")
+    local AutofarmSection = Autofarm:NewSection("Autofarm")
+
+    AutofarmSection:NewToggle("Autofarm", "Autofarms all of the work places.", function(state)
+        if state then
+            loadstring(game:HttpGet("https://pastebin.com/raw/GXAVZY4h"))()
+        else
+            game.StarterGui:SetCore("SendNotification", {
+            Title = "ShadeHub";
+                Text     = "Disabled autofarm.";
+                Icon     = "http://www.roblox.com/asset/?id=6701640285";
+                Duration = 10;
+            })
+        end
+    end)
