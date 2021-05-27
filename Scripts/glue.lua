@@ -100,7 +100,8 @@ Section:NewDropdown("Select Target", "DropdownInf", {
     "Unknown Boss [Fake Yoru]",
     "Runny",
     "Sneaky",
-    "Thug"		
+    "Thug",
+    "Kyo"		
 }, function(currentOption)
     print(currentOption)
     target = currentOption
