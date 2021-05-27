@@ -101,7 +101,8 @@ Section:NewDropdown("Select Target", "DropdownInf", {
     "Runny",
     "Sneaky",
     "Thug",
-    "Kyo"		
+    "Kyo",
+    "Chara"		
 }, function(currentOption)
     print(currentOption)
     target = currentOption
