@@ -90,11 +90,17 @@ end)
 local target = nil
 Section:NewDropdown("Select Target", "DropdownInf", {
     "Cutie Noob",
-    "Nooby :D",
+    "Nooby",
     "King Noob",
-    "Kyo",
+    "Elite Noob",
     "Sans",
-    "Sword Master"
+    "Sword Master",
+    "Evil Thug",
+    "Slime",
+    "Unknown Boss [Fake Yoru]",
+    "Runny",
+    "Sneaky",
+    "Thug"		
 }, function(currentOption)
     print(currentOption)
     target = currentOption
