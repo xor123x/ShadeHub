@@ -136,6 +136,90 @@ Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
 
+local Tab4 = Window:NewTab("Stats")
+
+local Section8 = Tab4:NewSection("AutoStats")
+
+Section8:NewToggle("DevilFruit", "Enables Add DevilFruit.", function(state)
+    if state then
+        getgenv().Dstat = true;
+
+while wait() do
+ if getgenv().Dstat == true then
+local args = {
+    [1] = 1,
+    [2] = "DevilFruit"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent.Stats.Add:FireServer(unpack(args))
+
+    end
+ end 
+    else
+        getgenv().Dstat = false;
+    end
+end)
+
+Section8:NewToggle("Sword", "Enables Add Sword.", function(state)
+    if state then
+        getgenv().Sstat = true;
+
+while wait() do
+ if getgenv().Sstat == true then
+local args = {
+    [1] = 1,
+    [2] = "Melee"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent.Stats.Add:FireServer(unpack(args))
+
+    end
+ end 
+    else
+        getgenv().Sstat = false;
+    end
+end)
+
+Section8:NewToggle("Defense", "Enables Add Defense.", function(state)
+    if state then
+        getgenv().DDstat = true;
+
+while wait() do
+ if getgenv().DDstat == true then
+local args = {
+    [1] = 1,
+    [2] = "Defense"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent.Stats.Add:FireServer(unpack(args))
+
+    end
+ end 
+    else
+        getgenv().DDstat = false;
+    end
+end)
+
+Section8:NewToggle("Strength", "Enables Add Strength.", function(state)
+    if state then
+        getgenv().Fstat = true;
+
+while wait() do
+ if getgenv().Fstat == true then
+local args = {
+    [1] = 1,
+    [2] = "Strength"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent.Stats.Add:FireServer(unpack(args))
+
+    end
+ end 
+    else
+        getgenv().Fstat = false;
+    end
+end)
+
 
 
 local Tab2 = Window:NewTab("Teleports")
