@@ -15,7 +15,7 @@ local Game = GetGame()
 
 if Game then
     Supported = true
-    Script = game:HttpGet('https://shadehubhosting.000webhostapp.com/Scripts/' .. Game.ScriptName)
+    Script = game:HttpGet('https://raw.githubusercontent.com/xor123x/ShadeHub/master/Scripts/' .. Game.ScriptName)
 end
 
 local DuckHub = Instance.new("ScreenGui")
