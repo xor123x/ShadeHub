@@ -2,7 +2,7 @@ local HttpService = game:GetService('HttpService')
 local Supported = false
 local Script = nil
 
-local GameList = game:HttpGet('https://raw.githubusercontent.com/xor123x/ShadeHub/master/GameList.json')
+local GameList = game:HttpGet('https://shadehubhosting.000webhostapp.com/GameList.json')
 function GetGame()
     local GameTable = HttpService:JSONDecode(GameList)
     if GameTable[tostring(game.PlaceId)] then 
@@ -15,7 +15,7 @@ local Game = GetGame()
 
 if Game then
     Supported = true
-    Script = game:HttpGet('https://raw.githubusercontent.com/xor123x/ShadeHub/master/Scripts/' .. Game.ScriptName)
+    Script = game:HttpGet('https://shadehubhosting.000webhostapp.com/Scripts/' .. Game.ScriptName)
 end
 
 local DuckHub = Instance.new("ScreenGui")
