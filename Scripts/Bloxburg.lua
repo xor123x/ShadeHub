@@ -47,7 +47,7 @@ local function getOrder(customer)
     end;
 end;
 
-local bloxburg = library:CreateWindow("Bloxburg");
+local bloxburg = library:CreateWindow("ShadeHub - Bloxburg");
 
 bloxburg:AddToggle({
     text = "Stylez Hairdresser";
