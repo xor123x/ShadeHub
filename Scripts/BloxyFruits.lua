@@ -9,7 +9,7 @@ for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
     end
 end
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local window = ui.CreateLib("ShadeHub - Blox Fruits", "Ocean")
+local window = ui.CreateLib("SoriaHub - Blox Fruits", "Ocean")
 
 local customColors = {
     SchemeColor = Color3.fromRGB(0,255,255),
