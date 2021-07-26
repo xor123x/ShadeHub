@@ -1,6 +1,6 @@
 -- init
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local venyx = library.new("ShadeHub", 5013109572)
+local venyx = library.new("SoriaHub", 5013109572)
 
 -- themes
 local themes = {
