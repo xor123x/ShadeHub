@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local JailBreak = Library.CreateLib("ShadeHub - JailBreak", "Ocean")
+local JailBreak = Library.CreateLib("SoriaHub - JailBreak", "Ocean")
 
 local Main = JailBreak:NewTab("Main")
 local Guns = Main:NewSection("Gun Stuff")
