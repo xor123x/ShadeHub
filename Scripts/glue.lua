@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("ShadeHub - Glue Piece", "Ocean")
+local Window = Library.CreateLib("SoriaHub - Glue Piece", "Ocean")
 
 local Tab = Window:NewTab("AutoFarm")
 
