@@ -1,5 +1,5 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xarkkz/newui/main/libary"))()
-local ShadeHub = library.new("ShadeHub", 5013109572)
+local ShadeHub = library.new("SoriaHub", 5013109572)
 
 -- themes
 local themes = {
