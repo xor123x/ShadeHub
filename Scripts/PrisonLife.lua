@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("ShadeHub - Prison Life", "Ocean")
+    local Window = Library.CreateLib("Soria - Prison Life", "Ocean")
  
     -- MAIN
     local Main = Window:NewTab("Main")
